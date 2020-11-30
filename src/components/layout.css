@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(49, 102, 102);
+    text-align: center;
+}
+
+p {
+    color: rgb(202, 199, 199);
+    line-height: 2;
+}
+
+a {
+    color: rgb(180, 177, 177);
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    background: rgb(44, 39, 39);
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+.images {
+    text-align: center;
+    text-transform: capitalize;
+    width: 80vw;
+    margin: 3rem auto 0 auto;
+}
+
+.single-image {
+    border: 3px solid red;
+    padding: 1rem 0;
+}
+
+.br {
+    border-radius: 5px;
+}
+
+@media screen and (min-width:992px) {
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.single-product {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 3rem auto;
+    text-align: left;
+}
+
+@media screen and (min-width:768px) {
+    .single-product {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.left-border {
+    border-left: 4px solid rgb(170, 67, 67);
+    padding-left: 1rem;
+}
+
+.btn {
+    padding: .7rem 1.6rem;
+    background-color: rgb(170, 67, 67);
+    color: rgb(245, 214, 214);
+    transition: all .4s;
+    border: none;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 18px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgb(204, 82, 82);
+}
